@@ -24,8 +24,7 @@ import XPToast from "../src/assets/XPToast.jsx";
 import BadgeToast from "../src/assets/BadgeToast.jsx";
 import "../src/App.css";
 
-import { reducer } from "../../server/reducer.js";
-
+import { reducer } from "../../my-app/src/reducer.js";
 
 // ─── Reducer ────────────────────────────────────────────────────────────────
 
@@ -44,7 +43,7 @@ function dagReducer(state, action) {
         cycleError: null,
       };
     }
-    
+
     case "ADD_NODE": {
       const id = "node-" + uuidv4().slice(0, 8);
       const newNode = {
