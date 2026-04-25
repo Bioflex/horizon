@@ -7,14 +7,14 @@ import React, {
   useState,
 } from "react";
 import { v4 as uuidv4 } from "uuid";
-import { loadState, saveState, getDefaultState } from "../../server/storage.js";
+import { loadState, saveState, getDefaultState } from "./storage.js";
 import {
   recomputeUnlockStates,
   wouldCreateCycle,
   computeStats,
   suggestNextNode,
-} from "../../server/dag.js";
-import { XP_REWARDS, getLevelInfo, checkNewBadges } from "../../server/xp.js";
+} from "./dag.js";
+import { XP_REWARDS, getLevelInfo, checkNewBadges } from "./xp.js";
 import Canvas from "../src/assets/Canvas.jsx";
 import Toolbar from "../src/assets/Toolbar.jsx";
 import NodePanel from "../src/assets/NodePanel.jsx";

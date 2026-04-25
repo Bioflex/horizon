@@ -1,7 +1,7 @@
 // components/Toolbar.jsx
 import React, { useState } from "react";
 import "./Toolbar.css";
-import { TEMPLATES } from "../../../server/templates";
+import { TEMPLATES } from "../templates";
 
 const TOOLS = [
   { id: "select", icon: "◻", label: "Select", shortcut: "V" },

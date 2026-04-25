@@ -1,6 +1,6 @@
 // components/Header.jsx
 import React, { useState } from "react";
-import { getLevelInfo } from "../../../server/xp.js";
+import { getLevelInfo } from "../xp.js";
 import "./Header.css";
 
 export default function Header({ stats, levelInfo, xpTotal, dispatch, state }) {
